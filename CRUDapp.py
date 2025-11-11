@@ -8,7 +8,7 @@ def connect():
     return psycopg2.connect(
         dbname="university",
         user="postgres",
-        password="Bb024120", # THIS IS CONFIDENTIAL!!!!!
+        password="1234", # WOULD BE MY PASSWORD BUT ISN'T. USE YOUR OWN PLEASE...
         host="localhost",
         port="5432" # default postgres port
     )
@@ -122,4 +122,5 @@ if __name__ == "__main__":
     addStudent("Alice", "Johnson", "alice.johnson@example.com", "2023-09-03")
     updateStudentEmail(1, "john.newemail@example.com")
     deleteStudent(3)
+
     getAllStudents()
